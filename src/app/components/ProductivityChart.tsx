@@ -1,16 +1,13 @@
 'use client';
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
-// Dias da semana
 const days = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
 
-// Interface para cada tarefa
 interface Task {
   created_at: string;
-  // Adicione outras props se quiser (ex: title, completed, etc.)
+  // outras propriedades se necessário
 }
 
-// Props do componente
 interface ProductivityChartProps {
   tasks?: Task[];
 }
