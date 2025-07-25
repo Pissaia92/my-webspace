@@ -1,21 +1,37 @@
-'use client'
-import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from 'recharts'
+'use client';
+import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
-const days = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
+// Dias da semana
+const days = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
 
-export default function ProductivityChart({ tasks = [] }) {
-  const today = new Date()
+// Interface para cada tarefa
+interface Task {
+  created_at: string;
+  // Adicione outras props se quiser (ex: title, completed, etc.)
+}
+
+// Props do componente
+interface ProductivityChartProps {
+  tasks?: Task[];
+}
+
+export default function ProductivityChart({
+  tasks = [],
+}: ProductivityChartProps) {
+  const today = new Date();
   const lastWeek = Array.from({ length: 7 }, (_, i) => {
-    const d = new Date(today)
-    d.setDate(today.getDate() - i)
-    return d
-  }).reverse()
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    return d;
+  }).reverse();
 
   const data = lastWeek.map(date => {
-    const dateStr = date.toISOString().split('T')[0]
-    const count = tasks.filter(t => t.created_at?.split('T')[0] === dateStr).length
-    return { name: days[date.getDay()], tarefas: count }
-  })
+    const dateStr = date.toISOString().split('T')[0];
+    const count = tasks.filter(
+      t => t.created_at?.split('T')[0] === dateStr
+    ).length;
+    return { name: days[date.getDay()], tarefas: count };
+  });
 
   return (
     <div className="h-40 mt-4">
@@ -27,5 +43,5 @@ export default function ProductivityChart({ tasks = [] }) {
         </BarChart>
       </ResponsiveContainer>
     </div>
-  )
+  );
 }
