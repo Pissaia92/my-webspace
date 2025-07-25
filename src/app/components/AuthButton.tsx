@@ -36,7 +36,7 @@ export default function AuthButton() {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: 'http://localhost:3000', // ajuste se necessário
+        redirectTo: 'https://my-webspace-qoot.vercel.app/', // ajuste se necessário
       },
     });
   };
