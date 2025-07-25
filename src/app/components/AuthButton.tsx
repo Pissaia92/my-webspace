@@ -1,4 +1,3 @@
-// src/app/components/AuthButton.tsx
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -16,16 +15,16 @@ export default function AuthButton() {
         const { supabase } = await import('@/lib/supabase/supabase');
         const { data } = await supabase.auth.getUser();
 
-        if (!data.user) {
+        if (data.user) {
+          setUser(data.user);
+        } else {
           router.push('/');
-          return;
         }
-
-        setUser(data.user);
-        setLoading(false);
       } catch (error) {
-        console.error('Erro na autenticação:', error);
+        console.error('Erro ao verificar usuário:', error);
         router.push('/');
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -37,7 +36,7 @@ export default function AuthButton() {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: 'http://localhost:3000',
+        redirectTo: 'http://localhost:3000', // ajuste se necessário
       },
     });
   };
@@ -97,7 +96,7 @@ export default function AuthButton() {
           d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
         />
       </svg>
-      Login with Google
+      Login com Google
     </button>
   );
 }
