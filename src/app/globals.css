@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animação de pulsação suave (fade-in / fade-out) */
+@keyframes pulse-slow {
+  0%, 250% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
