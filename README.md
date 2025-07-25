@@ -1,28 +1,28 @@
-🚀 Meu Portfólio Pessoal com Next.js e Tailwind CSS
+# My webspace 🌐
 
-Este é o repositório do meu portfólio pessoal, construído usando Next.js , Tailwind CSS e hospedado no Vercel . O site é responsivo, acessível e otimizado para SEO.
-Link: https://meu-portifolio-delta-five.vercel.app/
+A full-stack portfolio repository with a productivity dashboard, secure authentication, and integration with modern tools. 
 
-🛠 Tecnologias Utilizadas
+## Technologies Used
 
-Next.js : Framework React para criar aplicações web modernas.
+- **Next.js** – App Router, Server Components, SSR
+- **Supabase** – Authentication (OAuth), PostgreSQL database, RLS
+- **Tailwind CSS** – Fast and responsive styling
+- **SWR** – Real-time data caching and synchronization
+- **Recharts** – Data visualization (productivity charts)
+- **jsPDF** – Export tasks to PDF
+- **IndexedDB / localStorage** – Offline support (under implementation)
+- **Hugging Face** – Integration with Machine Learning projects
 
-Tailwind CSS : Biblioteca de classes utilitárias para estilização rápida e eficiente.
+## Main Features
 
-Vercel : Plataforma de hospedagem e deploy automático.
+-  Google login via Supabase Auth
+-  Dashboard with CRUD for tasks and filters (pending/completed)
+-  Productivity chart with Recharts
+-  Export tasks to PDF
+-  Project page with technical details and live links
+-  Responsive design and intuitive interface
 
-GitHub : Gerenciamento de versão e integração contínua.
+Hosted on Vercel:
+https://my-webspace-qoot.vercel.app/
 
-
-A estrutura básica do projeto segue os padrões do Next.js:
-
-
-🔧 Como Rodar Localmente
-1. Clone o repositório:
-git clone https://github.com/seu-usuário/meu-portifolio.git
-
-2. Instale as dependências: npm install.
-    
-3. Inicie o servidor: npm run dev
- 
-O site estará disponível em: http://localhost:3000
+This project is licensed under the MIT License.
