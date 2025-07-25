@@ -1,8 +1,18 @@
-// src/app/components/ExportButton.tsx
 'use client';
 import jsPDF from 'jspdf';
 
-export default function ExportButton({ tasks = [] }) {
+// Define a interface para cada tarefa
+interface Task {
+  title: string;
+  completed: boolean;
+}
+
+// Tipa explicitamente a props do componente
+interface ExportButtonProps {
+  tasks?: Task[];
+}
+
+export default function ExportButton({ tasks = [] }: ExportButtonProps) {
   const exportToPDF = () => {
     const doc = new jsPDF();
     doc.setFontSize(16);
