@@ -3,9 +3,9 @@ import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const days = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
 
+// Define a interface com os dados que você usa
 interface Task {
   created_at: string;
-  // outras propriedades se necessário
 }
 
 interface ProductivityChartProps {
@@ -25,7 +25,7 @@ export default function ProductivityChart({
   const data = lastWeek.map(date => {
     const dateStr = date.toISOString().split('T')[0];
     const count = tasks.filter(
-      t => t.created_at?.split('T')[0] === dateStr
+      (t: Task) => t.created_at?.split('T')[0] === dateStr
     ).length;
     return { name: days[date.getDay()], tarefas: count };
   });
