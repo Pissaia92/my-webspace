@@ -5,7 +5,7 @@ A full-stack portfolio repository with a productivity dashboard, secure authenti
 ## Technologies Used
 
 - **Next.js** – App Router, Server Components, SSR
-- **Supabase** – Authentication (OAuth), PostgreSQL database, RLS
+- **Supabase** – Authentication (OAuth), PostgreSQL database, RLS (on standby at this moment)
 - **Tailwind CSS** – Fast and responsive styling
 - **SWR** – Real-time data caching and synchronization
 - **Recharts** – Data visualization (productivity charts)
