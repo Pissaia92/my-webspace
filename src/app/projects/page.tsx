@@ -1,6 +1,4 @@
-// src/app/projects/page.tsx
 import Link from 'next/link';
-
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-gray-900 text-white px-6 py-12">
@@ -9,7 +7,6 @@ export default function ProjectsPage() {
         <p className="text-gray-400 mb-12 text-center">
           Discover some of my work.
         </p>
-
         <div className="grid gap-8 md:grid-cols-2">
           {/* Project: TaskFlow */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
@@ -24,7 +21,7 @@ export default function ProjectsPage() {
               href="/projects/taskflow"
               className="text-blue-400 hover:underline text-sm"
             >
-              → View details
+              → See details
             </Link>
           </div>
 
@@ -43,6 +40,24 @@ export default function ProjectsPage() {
             </p>
             <p className="text-blue-400 text-sm">→ See details</p>
           </a>
+
+          {/* Project: CitySense */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <h2 className="text-xl font-semibold text-white mb-3">
+              🌆 CitySense
+            </h2>
+            <p className="text-gray-300 mb-4 text-sm">
+              Aplicação full-stack que analisa e prevê qualidade de vida urbana
+              usando Machine Learning, com dashboards interativos e comparação
+              entre cidades.
+            </p>
+            <Link
+              href="/projects/citysense"
+              className="text-blue-400 hover:underline text-sm"
+            >
+              → Mais detalhes
+            </Link>
+          </div>
         </div>
 
         {/* Back button */}
