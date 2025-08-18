@@ -63,7 +63,7 @@ export default function Home() {
           <span className="text-green-500"></span>
         </h1>
         <p className="text-lg md:text-xl mb-8 text-gray-300">
-          Fullstack Developer | Data Engineer
+          Fullstack Developer | Data Analyst
         </p>
         <Link
           href="/projects"
