@@ -48,15 +48,15 @@ export default function ProjectsPage() {
               🌆 CitySense
             </h2>
             <p className="text-gray-300 mb-4 text-sm">
-              Aplicação full-stack que analisa e prevê qualidade de vida urbana
-              usando Machine Learning, com dashboards interativos e comparação
-              entre cidades.
+              A full-stack application that analyzes and predicts urban quality
+              of life using machine learning, with interactive dashboards and
+              comparisons between cities.
             </p>
             <Link
               href="/projects/citysense"
               className="text-blue-400 hover:underline text-sm"
             >
-              → Mais detalhes
+              → See details
             </Link>
           </div>
 

@@ -12,18 +12,18 @@ export default function CitySensePage() {
 
         <header className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            🌆 CitySense - Índice de Qualidade de Vida Urbana
+            🌆 CitySense - Urban Quality of Life Index
           </h1>
           <p className="text-lg text-gray-300">
-            Aplicação web que analisa e compara a qualidade de vida em
-            diferentes cidades.
+            A web application that analyzes and compares the quality of life in
+            different cities.
           </p>
         </header>
 
         {/* Tecnologias com Badges */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-6">
-            🚀 Tecnologias Utilizadas
+            🚀 Technologies Used
           </h2>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
@@ -52,28 +52,28 @@ export default function CitySensePage() {
         {/* Funcionalidades */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">
-            ✨ Funcionalidades
+            ✨ Features
           </h2>
           <ul className="space-y-2 text-gray-300">
             <li>
-              <strong>Análise detalhada do IQV por cidade:</strong> Métricas
-              completas sobre clima e tendências climáticas.
+              <strong>Detailed analysis of the UQL by city:</strong>{' '}
+              Comprehensive metrics on climate and climate trends.
             </li>
             <li>
-              <strong>Comparação entre cidades:</strong> Visualização
-              comparativa de qualidade de vida entre diferentes localidades.
+              <strong>Comparison between cities:</strong> Comparative
+              visualization of quality of life between different locations.
             </li>
             <li>
-              <strong>Previsão de IQV com machine learning:</strong> Modelos
-              scikit-learn para previsão de qualidade de vida urbana.
+              <strong>QoF prediction with machine learning:</strong>{' '}
+              Scikit-learn models for predicting urban quality of life.
             </li>
             <li>
-              <strong>Gráficos interativos de comparação:</strong> Visualizações
-              dinâmicas com Recharts.
+              <strong>Interactive comparison charts:</strong> Dynamic
+              visualizations with Recharts.
             </li>
             <li>
-              <strong>Modo claro/escuro:</strong> Interface adaptável ao modo
-              preferencial do usuário.
+              <strong>Light/Dark mode:</strong> Interface adaptable to user
+              preference.
             </li>
           </ul>
         </section>
@@ -81,23 +81,23 @@ export default function CitySensePage() {
         {/* Diferenciais Técnicos */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">
-            🎯 Diferenciais Técnicos
+            🎯 Technical Differentials
           </h2>
           <ul className="space-y-2 text-gray-300">
             <li>
-              <strong>API REST escalável:</strong> FastAPI com autenticação JWT
-              opcional.
+              <strong>Scalable REST API:</strong> FastAPI with optional JWT
+              authentication.
             </li>
             <li>
-              <strong>Integração ML completa:</strong> Modelos de machine
-              learning para previsões avançadas.
+              <strong>Complete ML Integration:</strong> Machine learning models
+              for advanced predictions.
             </li>
             <li>
-              <strong>Validação de dados robusta:</strong> Pydantic para schemas
-              type-safe.
+              <strong>Robust data validation:</strong> Pydantic for type-safe
+              schemas.
             </li>
             <li>
-              <strong>Deploy automatizado:</strong> Pipelines CI/CD no Render.
+              <strong>Automated deployment:</strong> CI/CD pipelines on Render.
             </li>
           </ul>
         </section>
@@ -105,30 +105,30 @@ export default function CitySensePage() {
         {/* Resultados Técnicos */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">
-            📊 Resultados Técnicos
+            📊 Technical Results
           </h2>
           <ul className="space-y-2 text-gray-300">
-            <li>Integração completa entre frontend e backend em tempo real.</li>
-            <li>Visualização de dados interativa com gráficos responsivos.</li>
             <li>
-              Modelos ML com previsões precisas de qualidade de vida urbana.
+              Complete integration between frontend and backend in real-time.
             </li>
-            <li>Interface moderna com suporte a modo claro/escuro.</li>
+            <li>Interactive data visualization with responsive charts.</li>
+            <li>
+              ML models with accurate predictions of urban quality of life.
+            </li>
+            <li>Modern interface with support for light/dark mode.</li>
           </ul>
         </section>
 
         {/* Botão de acesso ao projeto */}
         <div className="text-center mt-10">
-          <p className="text-gray-400 text-sm mb-4">
-            Acesse o projeto completo
-          </p>
+          <p className="text-gray-400 text-sm mb-4">Access the project</p>
           <Link
             href="https://city-sense.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition transform hover:scale-105"
           >
-            🌐 Acessar CitySense
+            🌐 Access CitySense
           </Link>
         </div>
       </div>
