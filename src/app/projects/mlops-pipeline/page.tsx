@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function MLOpsPipelinePage() {
   return (
@@ -146,10 +147,11 @@ export default function MLOpsPipelinePage() {
                 Project Architecture
               </h3>
               <div className="rounded-lg overflow-hidden border border-gray-700">
-                {/* Caminho da imagem relativo à pasta 'public' */}
-                <img
+                <Image
                   src="/images/projetos/mlops/arquitetura.png"
                   alt="Diagrama da arquitetura do projeto MLOps"
+                  width={800}
+                  height={400}
                   className="w-full h-auto object-contain"
                 />
               </div>
@@ -164,31 +166,37 @@ export default function MLOpsPipelinePage() {
                 Apache Airflow UI
               </h3>
               <div className="rounded-lg overflow-hidden border border-gray-700">
-                <img
+                <Image
                   src="/images/projetos/mlops/airflow01.png"
                   alt="Interface do usuário do Apache Airflow mostrando o DAG etl_imoveis"
+                  width={800}
+                  height={400}
                   className="w-full h-auto object-contain"
                 />
               </div>
               <p className="text-gray-400 text-sm mt-2 text-center">
                 Airflow interface displaying the DAG responsible for the ETL
-                process
+                process.
               </p>
             </div>
             {/* Imagem 3: FastAPI Docs */}
             <div>
               <h3 className="text-xl font-medium text-gray-200 mb-2">
-                Documentation (Swagger UI)
+                FastAPI Documentation (Swagger UI)
               </h3>
               <div className="rounded-lg overflow-hidden border border-gray-700">
-                <img
+                <Image
                   src="/images/projetos/mlops/airflow02.png"
                   alt="Interface de documentação da API FastAPI (/docs)"
+                  width={800}
+                  height={400}
                   className="w-full h-auto object-contain"
                 />
               </div>
               <p className="text-gray-400 text-sm mt-2 text-center">
-                <code className="bg-gray-700 px-1 rounded">POST /predict</code>.
+                Interactive API documentation, showing the{' '}
+                <code className="bg-gray-700 px-1 rounded">POST /predict</code>{' '}
+                endpoint.
               </p>
             </div>
           </div>
