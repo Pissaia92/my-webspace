@@ -148,7 +148,7 @@ export default function MLOpsPipelinePage() {
               </h3>
               <div className="rounded-lg overflow-hidden border border-gray-700">
                 <Image
-                  src="/images/projetos/mlops/arquitetura.png"
+                  src="/images/mlops/arquitetura.png"
                   alt="Diagrama da arquitetura do projeto MLOps"
                   width={800}
                   height={400}
@@ -167,7 +167,7 @@ export default function MLOpsPipelinePage() {
               </h3>
               <div className="rounded-lg overflow-hidden border border-gray-700">
                 <Image
-                  src="/images/projetos/mlops/airflow01.png"
+                  src="/images/mlops/airflow01.png"
                   alt="Interface do usuário do Apache Airflow mostrando o DAG etl_imoveis"
                   width={800}
                   height={400}
@@ -186,7 +186,7 @@ export default function MLOpsPipelinePage() {
               </h3>
               <div className="rounded-lg overflow-hidden border border-gray-700">
                 <Image
-                  src="/images/projetos/mlops/airflow02.png"
+                  src="/images/mlops/airflow02.png"
                   alt="Interface de documentação da API FastAPI (/docs)"
                   width={800}
                   height={400}
