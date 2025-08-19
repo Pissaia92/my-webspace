@@ -179,6 +179,22 @@ export default function MLOpsPipelinePage() {
                 process.
               </p>
             </div>
+            {/* Imagem 2.1: Airflow DAG Detalhado */}
+            <div>
+              <h3 className="text-xl font-medium text-gray-200 mb-2">
+                Responses
+              </h3>
+              <div className="rounded-lg overflow-hidden border border-gray-700">
+                <Image
+                  src="/images/mlops/airflow03.png"
+                  alt="Visualização detalhada do DAG no Apache Airflow"
+                  width={800}
+                  height={400}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <p className="text-gray-400 text-sm mt-2 text-center"></p>
+            </div>
             {/* Imagem 3: FastAPI Docs */}
             <div>
               <h3 className="text-xl font-medium text-gray-200 mb-2">
@@ -193,6 +209,7 @@ export default function MLOpsPipelinePage() {
                   className="w-full h-auto object-contain"
                 />
               </div>
+
               <p className="text-gray-400 text-sm mt-2 text-center">
                 Interactive API documentation, showing the{' '}
                 <code className="bg-gray-700 px-1 rounded">POST /predict</code>{' '}
