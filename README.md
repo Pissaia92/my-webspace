@@ -1,28 +1,43 @@
-# My webspace 🌐
+My Webspace 🌐
 
-A full-stack portfolio repository with a productivity dashboard, secure authentication, and integration with modern tools. 
+A full-stack portfolio that combines a productivity dashboard, secure authentication, and integration with modern tools. The goal is to demonstrate best practices in web development, from the backend to the user experience.
 
-## Technologies Used
+📌 Objective
 
-- **Next.js** – App Router, Server Components, SSR
-- **Supabase** – Authentication (OAuth), PostgreSQL database, RLS (on standby at this moment)
-- **Tailwind CSS** – Fast and responsive styling
-- **SWR** – Real-time data caching and synchronization
-- **Recharts** – Data visualization (productivity charts)
-- **jsPDF** – Export tasks to PDF
-- **IndexedDB / localStorage** – Offline support (under implementation)
-- **Hugging Face** – Integration with Machine Learning projects
+Create a complete application that allows for simple, responsive, and secure task management, as well as serving as a showcase for machine learning integrations and data export.
 
-## Main Features
+🛠️ Technologies
 
--  Google login via Supabase Auth
--  Dashboard with CRUD for tasks and filters (pending/completed)
--  Productivity chart with Recharts
--  Export tasks to PDF
--  Project page with technical details and live links
--  Responsive design and intuitive interface
+Next.js – App Router, Server Components, SSR
 
-Hosted on Vercel:
-https://my-webspace-qoot.vercel.app/
+Supabase – OAuth authentication + PostgreSQL database (RLS on standby)
 
-This project is licensed under the MIT License.
+Tailwind CSS – Responsive and fast styling
+
+SWR – Real-time caching and synchronization
+
+Recharts – Productivity visualization
+
+jsPDF – Export tasks to PDF
+
+IndexedDB / localStorage – Offline support (under implementation)
+
+Hugging Face – Integration with machine learning projects
+
+✨ Features
+
+Login with Google via Supabase Auth
+
+Dashboard with CRUD for tasks and filters (pending/completed)
+
+Real-time productivity graph
+
+Export tasks to PDF
+
+Project page with technical details and links
+
+Responsive design and intuitive interface
+
+🔗 Deploy
+
+Available on: my-webspace-qoot.vercel.app
