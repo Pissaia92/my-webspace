@@ -40,4 +40,4 @@ Responsive design and intuitive interface
 
 🔗 Deploy
 
-Available on: my-webspace-qoot.vercel.app
+Available on: my-webspace-qoot.vercel.app (sometimes require a few seconds to load)
