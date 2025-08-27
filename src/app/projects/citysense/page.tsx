@@ -121,7 +121,7 @@ export default function CitySensePage() {
 
         {/* Botão de acesso ao projeto */}
         <div className="text-center mt-10">
-          <p className="text-gray-400 text-sm mb-4">Access the project</p>
+          <p className="text-gray-400 text-sm mb-4">Access the project (it may take some time to load)</p>
           <Link
             href="https://city-sense.vercel.app/"
             target="_blank"
