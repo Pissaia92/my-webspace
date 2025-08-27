@@ -94,7 +94,7 @@ export default function CustomSegmentationPage() {
             🔗 Access Project on Hugging Face
           </a>
           <p className="text-gray-400 text-sm mt-2">
-            Opens in a new tab. Test the model live!
+            (Sometimes require a space restart)
           </p>
         </div>
       </div>
