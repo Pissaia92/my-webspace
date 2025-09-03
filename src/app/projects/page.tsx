@@ -9,6 +9,42 @@ export default function ProjectsPage() {
           Discover some of my work.
         </p>
         <div className="grid gap-8 md:grid-cols-2">
+          {/* Project: HR-Flow - NEW */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <h2 className="text-xl font-semibold text-white mb-3">
+              👥 HR-Flow - HR Request Management System
+            </h2>
+            <p className="text-gray-300 mb-4 text-sm">
+              Full-stack application for managing HR requests with role-based
+              access control, real-time analytics, and automated email
+              notifications.
+            </p>
+            <Link
+              href="/projects/hr-flow"
+              className="text-blue-400 hover:underline text-sm"
+            >
+              → See details
+            </Link>
+          </div>
+
+          {/* Project: CitySense */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <h2 className="text-xl font-semibold text-white mb-3">
+              🌆 CitySense
+            </h2>
+            <p className="text-gray-300 mb-4 text-sm">
+              A full-stack application that analyzes and predicts urban quality
+              of life using machine learning, with interactive dashboards and
+              comparisons between cities.
+            </p>
+            <Link
+              href="/projects/citysense"
+              className="text-blue-400 hover:underline text-sm"
+            >
+              → See details
+            </Link>
+          </div>
+
           {/* Project: TaskFlow */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
@@ -41,24 +77,6 @@ export default function ProjectsPage() {
             </p>
             <p className="text-blue-400 text-sm">→ See details</p>
           </a>
-
-          {/* Project: CitySense */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h2 className="text-xl font-semibold text-white mb-3">
-              🌆 CitySense
-            </h2>
-            <p className="text-gray-300 mb-4 text-sm">
-              A full-stack application that analyzes and predicts urban quality
-              of life using machine learning, with interactive dashboards and
-              comparisons between cities.
-            </p>
-            <Link
-              href="/projects/citysense"
-              className="text-blue-400 hover:underline text-sm"
-            >
-              → See details
-            </Link>
-          </div>
 
           {/* Project: MLOps Pipeline - NEW */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
