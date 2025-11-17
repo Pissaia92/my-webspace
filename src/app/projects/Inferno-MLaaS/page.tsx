@@ -157,7 +157,7 @@ export default function InfernoMlaasPage() {
           </h2>
           <p className="text-gray-300 mb-6">
             Access the GitHub repository and the comprehensive README file which
-            serves as the project's technical documentation.
+            serves as the project&apos;s technical documentation.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
