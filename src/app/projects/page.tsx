@@ -27,6 +27,24 @@ export default function ProjectsPage() {
             </Link>
           </div>
 
+          {/* Project: Inferno MLaaS - NEW */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <h2 className="text-xl font-semibold text-white mb-3">
+              🤖 Inferno MLaaS - ML as a Service Platform
+            </h2>
+            <p className="text-gray-300 mb-4 text-sm">
+              A production-grade platform for serving ML models via a FastAPI
+              API. Features a full CI/CD pipeline with Terraform for automated
+              deployments to AWS ECS Fargate.
+            </p>
+            <Link
+              href="/projects/inferno-mlaas"
+              className="text-blue-400 hover:underline text-sm"
+            >
+              → See details
+            </Link>
+          </div>
+
           {/* Project: CitySense */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
