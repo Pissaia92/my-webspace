@@ -1,7 +1,22 @@
 import Link from 'next/link';
+import React from 'react'; // Import React for explicit typing
 
-// Component name
-export default function InfernoMlaasPage() {
+// Define the component type explicitly
+const InfernoMlaasPage: React.FC = () => {
+  // Define the tech stack as a typed array
+  const technologies = [
+    { name: 'Python (FastAPI)', color: 'bg-blue-900 text-blue-200' },
+    { name: 'Terraform (IaC)', color: 'bg-purple-900 text-purple-200' },
+    { name: 'AWS ECS Fargate', color: 'bg-orange-800 text-orange-200' },
+    { name: 'Docker', color: 'bg-cyan-900 text-cyan-200' },
+    { name: 'GitHub Actions (CI/CD)', color: 'bg-gray-700 text-gray-200' },
+    { name: 'AWS S3', color: 'bg-red-900 text-red-200' },
+    { name: 'AWS ECR', color: 'bg-blue-800 text-blue-200' },
+    { name: 'Scikit-learn', color: 'bg-yellow-800 text-yellow-200' },
+    { name: 'Poetry', color: 'bg-teal-900 text-teal-200' },
+    { name: 'Pytest', color: 'bg-green-900 text-green-200' },
+  ];
+
   return (
     <div className="min-h-screen bg-gray-900 text-white px-6 py-12">
       <div className="max-w-4xl mx-auto">
@@ -29,28 +44,7 @@ export default function InfernoMlaasPage() {
             🚀 Technologies Used
           </h2>
           <div className="flex flex-wrap gap-3 justify-center">
-            {[
-              // Project's stack
-              { name: 'Python (FastAPI)', color: 'bg-blue-900 text-blue-200' },
-              {
-                name: 'Terraform (IaC)',
-                color: 'bg-purple-900 text-purple-200',
-              },
-              {
-                name: 'AWS ECS Fargate',
-                color: 'bg-orange-800 text-orange-200',
-              },
-              { name: 'Docker', color: 'bg-cyan-900 text-cyan-200' },
-              {
-                name: 'GitHub Actions (CI/CD)',
-                color: 'bg-gray-700 text-gray-200',
-              },
-              { name: 'AWS S3', color: 'bg-red-900 text-red-200' },
-              { name: 'AWS ECR', color: 'bg-blue-800 text-blue-200' },
-              { name: 'Scikit-learn', color: 'bg-yellow-800 text-yellow-200' },
-              { name: 'Poetry', color: 'bg-teal-900 text-teal-200' },
-              { name: 'Pytest', color: 'bg-green-900 text-green-200' },
-            ].map(tech => (
+            {technologies.map(tech => (
               <span
                 key={tech.name}
                 className={`px-3 py-1.5 text-sm rounded-full font-medium ${tech.color} transition hover:shadow-md hover:scale-105`}
@@ -61,7 +55,7 @@ export default function InfernoMlaasPage() {
           </div>
         </section>
 
-        {/* Features */}
+        {/* Core Features */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">
             ✨ Core Features
@@ -95,7 +89,7 @@ export default function InfernoMlaasPage() {
           </ul>
         </section>
 
-        {/* Technical Differentials */}
+        {/* Key Architectural Highlights */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">
             🎯 Key Architectural Highlights
@@ -124,7 +118,7 @@ export default function InfernoMlaasPage() {
           </ul>
         </section>
 
-        {/* Updated Technical Results */}
+        {/* Project Outcomes */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">
             📊 Project Outcomes
@@ -150,7 +144,7 @@ export default function InfernoMlaasPage() {
           </ul>
         </section>
 
-        {/* Updated Links */}
+        {/* Project Links */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">
             📘 Project Links
@@ -193,4 +187,6 @@ export default function InfernoMlaasPage() {
       </div>
     </div>
   );
-}
+};
+
+export default InfernoMlaasPage;
