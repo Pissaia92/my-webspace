@@ -15,9 +15,8 @@ export default function ProjectsPage() {
               👥 HR-Flow - HR Request Management System
             </h2>
             <p className="text-gray-300 mb-4 text-sm">
-              Full-stack application for managing HR requests with role-based
-              access control, real-time analytics, and automated email
-              notifications.
+              Enterprise-grade HR platform engineered with [Tech Stack],
+              focusing on RBAC security compliance and scalable database design.
             </p>
             <Link
               href="/projects/hr-flow"
@@ -51,9 +50,10 @@ export default function ProjectsPage() {
               🌆 CitySense
             </h2>
             <p className="text-gray-300 mb-4 text-sm">
-              A full-stack application that analyzes and predicts urban quality
-              of life using machine learning, with interactive dashboards and
-              comparisons between cities.
+              Geospatial Data Aggregation & Prediction System. End-to-end data
+              platform that aggregates multi-source urban datasets to feed a
+              predictive model. Features an optimized data processing layer for
+              real-time comparison metrics and interactive visualization.
             </p>
             <Link
               href="/projects/citysense"

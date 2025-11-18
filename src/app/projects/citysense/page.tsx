@@ -15,8 +15,8 @@ export default function CitySensePage() {
             🌆 CitySense - Urban Quality of Life Index
           </h1>
           <p className="text-lg text-gray-300">
-            A web application that analyzes and compares the quality of life in
-            different cities.
+            An End-to-End Geospatial Data Aggregation System exposing ML
+            predictions via a high-performance REST API.
           </p>
         </header>
 
@@ -56,16 +56,18 @@ export default function CitySensePage() {
           </h2>
           <ul className="space-y-2 text-gray-300">
             <li>
-              <strong>Detailed analysis of the UQL by city:</strong>{' '}
-              Comprehensive metrics on climate and climate trends.
+              <strong>Multi-Metric Data Aggregation:</strong> Aggregates
+              disparate climate and economic data points into a unified urban
+              score.
             </li>
             <li>
               <strong>Comparison between cities:</strong> Comparative
               visualization of quality of life between different locations.
             </li>
             <li>
-              <strong>QoF prediction with machine learning:</strong>{' '}
-              Scikit-learn models for predicting urban quality of life.
+              <strong>Real-time Inference Engine:</strong> Delivers instant
+              quality-of-life scores using a serialized Scikit-learn regressor
+              integrated directly into the API backend.
             </li>
             <li>
               <strong>Interactive comparison charts:</strong> Dynamic
@@ -93,11 +95,14 @@ export default function CitySensePage() {
               for advanced predictions.
             </li>
             <li>
-              <strong>Robust data validation:</strong> Pydantic for type-safe
-              schemas.
+              <strong>Strict Type Safety & Validation:</strong> Leverages
+              Pydantic models to enforce strict schema validation on
+              input/output payloads, preventing data corruption.
             </li>
             <li>
-              <strong>Automated deployment:</strong> CI/CD pipelines on Render.
+              <strong>CI/CD Pipeline:</strong> Automated build and deployment
+              workflows configured on Render, ensuring consistent production
+              releases
             </li>
           </ul>
         </section>
@@ -105,7 +110,7 @@ export default function CitySensePage() {
         {/* Resultados Técnicos */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">
-            📊 Technical Results
+            📊 System Design Highlights
           </h2>
           <ul className="space-y-2 text-gray-300">
             <li>
@@ -115,13 +120,18 @@ export default function CitySensePage() {
             <li>
               ML models with accurate predictions of urban quality of life.
             </li>
-            <li>Modern interface with support for light/dark mode.</li>
+            <li>
+              Model Serialization: Machine learning models are serialized and
+              cached in memory at startup to reduce latency per request.
+            </li>
           </ul>
         </section>
 
         {/* Botão de acesso ao projeto */}
         <div className="text-center mt-10">
-          <p className="text-gray-400 text-sm mb-4">Access the project (it may take some time to load)</p>
+          <p className="text-gray-400 text-sm mb-4">
+            Access the project (it may take some time to load)
+          </p>
           <Link
             href="https://city-sense.vercel.app/"
             target="_blank"
