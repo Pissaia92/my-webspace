@@ -63,23 +63,6 @@ export default function ProjectsPage() {
             </Link>
           </div>
 
-          {/* Project: TaskFlow */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h2 className="text-xl font-semibold text-white mb-3">
-              🧩 TaskFlow
-            </h2>
-            <p className="text-gray-300 mb-4 text-sm">
-              Full stack dashboard with authentication, productivity charts,
-              offline tasks, and PDF export.
-            </p>
-            <Link
-              href="/projects/taskflow"
-              className="text-blue-400 hover:underline text-sm"
-            >
-              → See details
-            </Link>
-          </div>
-
           {/* Project: Hugging Face / RFM */}
           <a
             href="/projects/custom-segmentation"

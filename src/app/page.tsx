@@ -58,7 +58,7 @@ export default function Home() {
       {/* Conteúdo central */}
       <main className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 pt-32 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Carlos Pissaia Junior. <br />
+          Carlos Pissaia Junior <br />
           <span className="text-green-500"></span>
         </h1>
         <p className="text-lg md:text-xl mb-8 text-gray-300">
