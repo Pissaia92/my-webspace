@@ -14,7 +14,7 @@ export default function MLOpsPipelinePage() {
 
         <header className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            🚀 MLOps Pipeline - Real Estate Price Prediction
+            🚀 Distributed Data Pipeline for Property Pricing
           </h1>
           <p className="text-lg text-gray-300">
             End-to-end MLOps project featuring Airflow, dbt, MLflow, FastAPI,

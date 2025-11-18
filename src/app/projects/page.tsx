@@ -82,7 +82,7 @@ export default function ProjectsPage() {
           {/* Project: MLOps Pipeline - NEW */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
-              🚀 MLOps Pipeline - Real Estate Prediction
+              🚀 Distributed Data Pipeline for Property Pricing
             </h2>
             <p className="text-gray-300 mb-4 text-sm">
               End-to-end MLOps project featuring Airflow, dbt, MLflow, FastAPI,
