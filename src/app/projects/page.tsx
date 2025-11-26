@@ -9,24 +9,27 @@ export default function ProjectsPage() {
           Discover some of my work.
         </p>
         <div className="grid gap-8 md:grid-cols-2">
-          {/* Project: HR-Flow - NEW */}
+          {/* Project: Azure Lakehouse*/}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
-              👥 HR-Flow - HR Request Management System
+              🌊 Unified Lakehouse & MLOps Platform
             </h2>
             <p className="text-gray-300 mb-4 text-sm">
-              Enterprise-grade HR platform engineered with [Tech Stack],
-              focusing on RBAC security compliance and scalable database design.
+              A high-scale Unified Data Platform simulating the Azure stack.
+              Implements a Medallion Architecture (Bronze/Silver/Gold) using
+              Delta Lake for ACID compliance. Features an end-to-end MLOps
+              pipeline with MLflow, automating model tracking and performing
+              distributed inference via Spark UDFs.
             </p>
             <Link
-              href="/projects/hr-flow"
+              href="/projects/azure-lake"
               className="text-blue-400 hover:underline text-sm"
             >
               → See details
             </Link>
           </div>
 
-          {/* Project: Inferno MLaaS - NEW */}
+          {/* Project: Inferno MLaaS*/}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
               🤖 Inferno MLaaS - ML as a Service Platform
@@ -44,42 +47,7 @@ export default function ProjectsPage() {
             </Link>
           </div>
 
-          {/* Project: CitySense */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h2 className="text-xl font-semibold text-white mb-3">
-              🌆 CitySense
-            </h2>
-            <p className="text-gray-300 mb-4 text-sm">
-              Geospatial Data Aggregation & Prediction System. End-to-end data
-              platform that aggregates multi-source urban datasets to feed a
-              predictive model. Features an optimized data processing layer for
-              real-time comparison metrics and interactive visualization.
-            </p>
-            <Link
-              href="/projects/citysense"
-              className="text-blue-400 hover:underline text-sm"
-            >
-              → See details
-            </Link>
-          </div>
-
-          {/* Project: Hugging Face / RFM */}
-          <a
-            href="/projects/custom-segmentation"
-            className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition"
-          >
-            <h2 className="text-xl font-semibold text-white mb-3">
-              🧠 RFM Analysis dashboard
-            </h2>
-            <p className="text-gray-300 mb-4 text-sm">
-              A clean, interactive dashboard built to segment e-commerce
-              customers based on purchasing behavior using the RFM model
-              (Recency, Frequency, Monetary).
-            </p>
-            <p className="text-blue-400 text-sm">→ See details</p>
-          </a>
-
-          {/* Project: MLOps Pipeline - NEW */}
+          {/* Project: MLOps Pipeline*/}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
               🚀 Distributed Data Pipeline for Property Pricing
@@ -96,6 +64,58 @@ export default function ProjectsPage() {
             </Link>
           </div>
         </div>
+
+        {/* Project: HR-Flow*/}
+        <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h2 className="text-xl font-semibold text-white mb-3">
+            👥 HR-Flow - HR Request Management System
+          </h2>
+          <p className="text-gray-300 mb-4 text-sm">
+            Enterprise-grade HR platform engineered with [Tech Stack], focusing
+            on RBAC security compliance and scalable database design.
+          </p>
+          <Link
+            href="/projects/hr-flow"
+            className="text-blue-400 hover:underline text-sm"
+          >
+            → See details
+          </Link>
+        </div>
+
+        {/* Project: CitySense */}
+        <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <h2 className="text-xl font-semibold text-white mb-3">
+            🌆 CitySense
+          </h2>
+          <p className="text-gray-300 mb-4 text-sm">
+            Geospatial Data Aggregation & Prediction System. End-to-end data
+            platform that aggregates multi-source urban datasets to feed a
+            predictive model. Features an optimized data processing layer for
+            real-time comparison metrics and interactive visualization.
+          </p>
+          <Link
+            href="/projects/citysense"
+            className="text-blue-400 hover:underline text-sm"
+          >
+            → See details
+          </Link>
+        </div>
+
+        {/* Project: Hugging Face / RFM */}
+        <a
+          href="/projects/custom-segmentation"
+          className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+        >
+          <h2 className="text-xl font-semibold text-white mb-3">
+            🧠 RFM Analysis dashboard
+          </h2>
+          <p className="text-gray-300 mb-4 text-sm">
+            A clean, interactive dashboard built to segment e-commerce customers
+            based on purchasing behavior using the RFM model (Recency,
+            Frequency, Monetary).
+          </p>
+          <p className="text-blue-400 text-sm">→ See details</p>
+        </a>
 
         {/* Back button */}
         <div className="text-center mt-10">
