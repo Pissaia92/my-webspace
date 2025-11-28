@@ -49,6 +49,26 @@ export default function ProjectsPage() {
             </Link>
           </div>
 
+          {/* Projeto: Real-Time Fraud Monitor (Streaming & Observability) */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+            <h2 className="text-xl font-semibold text-white mb-3">
+              🚨 Real-Time Financial Fraud Monitor
+            </h2>
+            <p className="text-gray-300 mb-4 text-sm">
+              Implementation of an **Event-Driven Architecture** to reduce fraud
+              detection latency from days to **sub-second**. Processes
+              continuous transaction streams using Python/InfluxDB, with
+              **Grafana** serving as the **Command Center** for real-time
+              observability, KPI tracking, and critical alerting.
+            </p>
+            <Link
+              href="/projects/realtime-monitor"
+              className="text-blue-400 hover:underline text-sm"
+            >
+              → See details
+            </Link>
+          </div>
+
           {/* Project: MLOps Pipeline*/}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
