@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-const RealTimeFraudPage: React.FC = () => {
+const FraudMonitor: React.FC = () => {
   const technologies = [
     { name: 'Python (Producer)', color: 'bg-blue-900 text-blue-200' },
     { name: 'InfluxDB (Time-Series)', color: 'bg-purple-900 text-purple-200' },
@@ -184,4 +184,4 @@ const RealTimeFraudPage: React.FC = () => {
   );
 };
 
-export default RealTimeFraudPage;
+export default FraudMonitor;
