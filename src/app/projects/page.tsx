@@ -62,7 +62,7 @@ export default function ProjectsPage() {
               observability, KPI tracking, and critical alerting.
             </p>
             <Link
-              href="/projects/realtime-monitor"
+              href="/projects/fraud-monitor"
               className="text-blue-400 hover:underline text-sm"
             >
               → See details
