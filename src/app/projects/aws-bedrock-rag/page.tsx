@@ -150,7 +150,7 @@ const AwsBedrockRag: React.FC = () => {
                 View technical documentation (README)
               </p>
               <Link
-                href="#"
+                href="https://github.com/Pissaia92/AWS-Bedrock-Enterprise-RAG-Template/blob/main/README.md"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition transform hover:scale-105"
@@ -164,7 +164,7 @@ const AwsBedrockRag: React.FC = () => {
                 Access the project repository
               </p>
               <Link
-                href="#"
+                href="https://github.com/Pissaia92/AWS-Bedrock-Enterprise-RAG-Template"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition transform hover:scale-105"
