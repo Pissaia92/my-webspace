@@ -31,16 +31,16 @@ export default function ProjectsPage() {
             </Link>
           </div>
 
-                  <div className="grid gap-8 md:grid-cols-2">
           {/* Project: AWS Bedrock RAG*/}
+          {/* REMOVIDO O GRID ANINHADO ERRADO AQUI */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
               🧠 AWS Bedrock Enterprise RAG
             </h2>
             <p className="text-gray-300 mb-4 text-sm">
-              Reference architecture for enterprise Generative AI, using AWS Bedrock (Titan), 
-              LangChain, and Vector Search.
-              This project implements the RAG (Retrieval-Augmented Generation) pattern with a 
+              Reference architecture for enterprise Generative AI, using AWS
+              Bedrock (Titan), LangChain, and Vector Search. This project
+              implements the RAG (Retrieval-Augmented Generation) pattern with a
               focus on stability and control.
             </p>
             <Link
@@ -142,11 +142,8 @@ export default function ProjectsPage() {
             </Link>
           </div>
 
-          {/* Project: Hugging Face / RFM */}
-          <a
-            href="/projects/custom-segmentation"
-            className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition"
-          >
+          {/* Project: RFM Analysis */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-white mb-3">
               🧠 RFM Analysis dashboard
             </h2>
@@ -155,8 +152,13 @@ export default function ProjectsPage() {
               customers based on purchasing behavior using the RFM model
               (Recency, Frequency, Monetary).
             </p>
-            <p className="text-blue-400 text-sm">→ See details</p>
-          </a>
+            <Link
+              href="/projects/custom-segmentation"
+              className="text-blue-400 hover:underline text-sm"
+            >
+              → See details
+            </Link>
+          </div>
         </div>
         {/* FIM DO GRID */}
 
